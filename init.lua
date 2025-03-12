@@ -901,6 +901,8 @@ require('lazy').setup({
         'vim',
         'vimdoc',
         'typescript',
+        'svelte',
+        'tsx',
         'scss',
         'html',
         'css',
