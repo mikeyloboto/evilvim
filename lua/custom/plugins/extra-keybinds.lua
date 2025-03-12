@@ -17,4 +17,6 @@ return {
   vim.keymap.set('i', '<S-CR>', '<Esc>A<CR>'),
   vim.keymap.set('i', ':w', '<Esc>:w'),
   vim.keymap.set('i', 'jj', '<Esc>'),
+  vim.keymap.set('n', '<leader><C-s>', ':split<CR>', { desc = '[S]plit' }),
+  vim.keymap.set('n', '<leader><C-v>', ':vsplit<CR>', { desc = 'Split [V]ertical' }),
 }

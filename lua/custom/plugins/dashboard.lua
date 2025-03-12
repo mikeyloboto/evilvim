@@ -61,6 +61,12 @@ return {
           icon = '📝',
         },
         {
+          desc = ' [L]azy',
+          key = 'L',
+          action = 'Lazy',
+          icon = '📦',
+        },
+        {
           desc = ' Close Dashboard',
           key = 'Q',
           action = 'bd',
