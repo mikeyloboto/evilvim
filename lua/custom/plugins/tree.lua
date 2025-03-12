@@ -17,6 +17,6 @@ return {
       enable = true, -- Show LSP diagnostics in the file explorer
     },
   },
-  vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true }), -- Toggle file browser
-  vim.keymap.set('n', '<leader>E', ':NvimTreeFocus<CR>', { noremap = true, silent = true }), -- Focus the file browser
+  vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'Tree Toggle' }), -- Toggle file browser
+  vim.keymap.set('n', '<leader>E', ':NvimTreeFocus<CR>', { noremap = true, silent = true, desc = 'Tree Focus' }), -- Focus the file browser
 }

@@ -13,6 +13,8 @@ return {
       { name = 'path' },
     },
   },
-  vim.keymap.set('n', '<leader>F', ':Telescope find_files<CR>', { noremap = true, silent = true }),
+  vim.keymap.set('n', '<leader>F', ':Telescope find_files<CR>', { noremap = true, silent = true, desc = 'Telescope' }),
   vim.keymap.set('i', '<S-CR>', '<Esc>A<CR>'),
+  vim.keymap.set('i', ':w', '<Esc>:w'),
+  vim.keymap.set('i', 'jj', '<Esc>'),
 }

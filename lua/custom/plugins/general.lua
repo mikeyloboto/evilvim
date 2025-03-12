@@ -4,7 +4,6 @@ return {
   require('nvim-ts-autotag').setup {
     setup = function() end,
     get_opts = {
-
       enable_close = true, -- Automatically close tags
       enable_rename = true, -- Automatically rename tags
       enable_close_on_slash = false, -- Disable auto-closing on trailing `</`
