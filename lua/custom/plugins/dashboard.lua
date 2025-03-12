@@ -61,6 +61,12 @@ return {
           icon = '📝',
         },
         {
+          desc = ' [G]it',
+          key = 'G',
+          action = 'Fugit2',
+          icon = '',
+        },
+        {
           desc = ' [L]azy',
           key = 'L',
           action = 'Lazy',
