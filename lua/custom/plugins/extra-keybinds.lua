@@ -5,6 +5,7 @@ return {
       ['<CR>'] = cmp.mapping.confirm { select = true }, -- Accept currently selected item on Enter
       ['<Tab>'] = cmp.mapping.select_next_item(), -- Navigate to the next item with Tab
       ['<S-Tab>'] = cmp.mapping.select_prev_item(), -- Navigate to the previous item with Shift+Tab
+      ['<Esc>'] = cmp.mapping.close(),
     },
     sources = {
       { name = 'nvim_lsp' },
@@ -13,4 +14,5 @@ return {
     },
   },
   vim.keymap.set('n', '<leader>F', ':Telescope find_files<CR>', { noremap = true, silent = true }),
+  vim.keymap.set('i', '<S-CR>', '<Esc>A<CR>'),
 }

@@ -3,7 +3,7 @@ return {
     theme = 'hyper', -- Choose between 'hyper' or 'doom'
     config = {
       header = {
-        'Welcome to Neovim!',
+        'Neovim',
       },
       shortcut = {
         { desc = '📁 Files', group = '@property', action = 'Telescope find_files', key = 'f' },

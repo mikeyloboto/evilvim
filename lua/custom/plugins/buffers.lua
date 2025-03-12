@@ -1,9 +1,9 @@
 return {
   require('bufferline').setup {
     options = {
-      numbers = 'none',
+      numbers = 'ordinal',
       diagnostics = 'nvim_lsp',
-      separator_style = 'slant',
+      separator_style = 'thin',
       always_show_bufferline = true,
     },
   },
