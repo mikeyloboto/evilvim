@@ -30,8 +30,6 @@ return {
       },
     },
     cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
-    keys = {
-      { '<leader>F', mode = 'n', '<cmd>Fugit2<cr>' },
-    },
+    vim.keymap.set('n', '<leader>G', '<cmd>Fugit2<CR>', { desc = 'Git' }),
   },
 }
