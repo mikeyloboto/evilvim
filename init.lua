@@ -154,7 +154,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
   'roobert/tailwindcss-colorizer-cmp.nvim',
   'nvimtools/none-ls.nvim',
@@ -285,6 +284,8 @@ require('lazy').setup({
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
         'nvim-telescope/telescope-fzf-native.nvim',
+        -- ripgrep support?
+        'BurntSushi/ripgrep',
 
         -- `build` is used to run some command when the plugin is installed/updated.
         -- This is only run then, not every time Neovim starts up.
