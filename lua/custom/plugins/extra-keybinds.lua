@@ -14,6 +14,7 @@ return {
     },
   },
   vim.keymap.set('n', '<leader>F', ':Telescope find_files<CR>', { noremap = true, silent = true, desc = 'Telescope' }),
+  vim.keymap.set('n', '<leader>A', ':Alpha<CR>', { noremap = true, silent = true, desc = 'Dashboard' }),
   vim.keymap.set('i', ':w', '<Esc>:w'),
   vim.keymap.set('i', 'jj', '<Esc>'),
   vim.keymap.set('n', '<leader><C-s>', ':split<CR>', { desc = '[S]plit' }),

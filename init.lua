@@ -159,7 +159,6 @@ require('lazy').setup({
   'nvimtools/none-ls.nvim',
   { 'windwp/nvim-ts-autotag', dependencies = { 'nvim-treesitter/nvim-treesitter' } },
   { 'windwp/nvim-autopairs' },
-  { 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { 'nvim-tree/nvim-web-devicons' } },
   { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 
   -- NOTE: Plugins can also be added by using a table,
