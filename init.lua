@@ -600,7 +600,7 @@ require('lazy').setup({
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
-        -- Some languages (like typescript) have entire language plugins that can be useful:
+        -- Some languages (like typescript) have entire language plugins that can be useful:init
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
@@ -909,6 +909,8 @@ require('lazy').setup({
         'css',
         'yaml',
         'json',
+        'rust',
+        'go',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
