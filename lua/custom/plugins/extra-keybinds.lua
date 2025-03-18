@@ -17,6 +17,6 @@ return {
   vim.keymap.set('n', '<leader>A', ':Alpha<CR>', { noremap = true, silent = true, desc = 'Dashboard' }),
   vim.keymap.set('i', ':w', '<Esc>:w'),
   vim.keymap.set('i', 'jj', '<Esc>'),
-  vim.keymap.set('n', '<leader><C-s>', ':split<CR>', { desc = '[S]plit' }),
-  vim.keymap.set('n', '<leader><C-v>', ':vsplit<CR>', { desc = 'Split [V]ertical' }),
+  vim.keymap.set('n', '<leader>Ss', ':split<CR>', { desc = '[S]plit' }),
+  vim.keymap.set('n', '<leader>Sv', ':vsplit<CR>', { desc = 'Split [V]ertical' }),
 }
