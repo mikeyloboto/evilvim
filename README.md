@@ -1,6 +1,6 @@
 # Evilvim 
 
-## Based on kickstart.nvim
+### Based on kickstart.nvim
 
 ![Dashboard](./screenshots/dashboard.png)
 ![Nvim](./screenshots/nvim.png)
