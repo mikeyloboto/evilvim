@@ -201,3 +201,5 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ## Other information
 
 Subscribe to [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
+
+For nice tmux bar (like you see on screenshots), see [evilcli](https://github.com/mikleyloboto/evilcli).
