@@ -265,6 +265,7 @@ require('lazy').setup({
         { '<leader>t', group = '[T]oggle' },
         { '<leader>e', group = 'Tre[e]', mode = { 'n' } },
         { '<leader>G', group = '[G]it', mode = { 'n' } },
+        { '<leader>T', group = '[T]abnine', mode = { 'n' } },
         { '<leader>S', group = '[S]plit', mode = { 'n' } },
         { '<leader>l', group = '[L]anguage', mode = { 'n' } },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
@@ -835,6 +836,8 @@ require('lazy').setup({
         transparent = true,
         styles = {
           comments = { italic = false }, -- Disable italics in comments
+          sidebars = 'transparent',
+          floats = 'transparent',
         },
       }
 
@@ -912,6 +915,7 @@ require('lazy').setup({
         'yaml',
         'json',
         'rust',
+        'ron',
         'go',
       },
       -- Autoinstall languages that are not installed
