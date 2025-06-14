@@ -7,15 +7,13 @@ return {
       'ngserver',
       '--stdio',
       '--tsProbeLocations',
-      '/home/evilbas/.node-packages/lib/node_modules',
+      '/home/evilbas/.local/lib/node_modules',
       '--ngProbeLocations',
-      '/home/evilbas/.node-packages/lib/node_modules',
+      '/home/evilbas/.local/lib/node_modules',
     },
-    on_attach = function(client, bufnr)
-      -- Add keybindings or custom settings here
-    end,
+    on_attach = function(client, bufnr) end,
     capabilities = require('cmp_nvim_lsp').default_capabilities(),
-    root_dir = require('lspconfig').util.root_pattern('angular.json', '.git'),
+    root_dir = require('lspconfig').util.root_pattern 'angular.json',
   },
   require('tailwindcss-colorizer-cmp').setup {
     color_square_width = 2,

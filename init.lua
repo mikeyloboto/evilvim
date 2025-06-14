@@ -293,7 +293,7 @@ require('lazy').setup({
 
         -- `build` is used to run some command when the plugin is installed/updated.
         -- This is only run then, not every time Neovim starts up.
-        build = 'make',
+        build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release',
 
         -- `cond` is a condition used to determine whether this plugin should be
         -- installed and loaded.
@@ -565,20 +565,24 @@ require('lazy').setup({
             [vim.diagnostic.severity.HINT] = '󰌶 ',
           },
         } or {},
-        virtual_text = {
-          source = 'if_many',
-          spacing = 2,
-          format = function(diagnostic)
-            local diagnostic_message = {
-              [vim.diagnostic.severity.ERROR] = diagnostic.message,
-              [vim.diagnostic.severity.WARN] = diagnostic.message,
-              [vim.diagnostic.severity.INFO] = diagnostic.message,
-              [vim.diagnostic.severity.HINT] = diagnostic.message,
-            }
-            return diagnostic_message[diagnostic.severity]
-          end,
-        },
+        virtual_text = false,
+        --  {
+        --  source = 'if_many',
+        --  spacing = 2,
+        --  format = function(diagnostic)
+        --    local diagnostic_message = {
+        --      [vim.diagnostic.severity.ERROR] = diagnostic.message,
+        --      [vim.diagnostic.severity.WARN] = diagnostic.message,
+        --      [vim.diagnostic.severity.INFO] = diagnostic.message,
+        --      [vim.diagnostic.severity.HINT] = diagnostic.message,
+        --   }
+        --   return diagnostic_message[diagnostic.severity]
+        -- end,
+        -- },
       }
+
+      vim.o.updatetime = 250
+      vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
       -- LSP servers and clients are able to communicate to each other what features they support.
       --  By default, Neovim doesn't support everything that is in the LSP specification.
