@@ -266,6 +266,7 @@ require('lazy').setup({
         { '<leader>e', group = 'Tre[e]', mode = { 'n' } },
         { '<leader>G', group = '[G]it', mode = { 'n' } },
         { '<leader>T', group = '[T]abnine', mode = { 'n' } },
+        { '<leader>m', group = '[M]usic', mode = { 'n' } },
         { '<leader>S', group = '[S]plit', mode = { 'n' } },
         { '<leader>l', group = '[L]anguage', mode = { 'n' } },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
