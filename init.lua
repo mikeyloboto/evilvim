@@ -153,7 +153,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  -- 'tpope/vim-sleuth',  Detect tabstop and shiftwidth automatically
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
   'roobert/tailwindcss-colorizer-cmp.nvim',
   'nvimtools/none-ls.nvim',
@@ -267,6 +267,7 @@ require('lazy').setup({
         { '<leader>G', group = '[G]it', mode = { 'n' } },
         { '<leader>T', group = '[T]abnine', mode = { 'n' } },
         { '<leader>m', group = '[M]usic', mode = { 'n' } },
+        { '<leader>R', group = '[R]est Client', mode = { 'n' } },
         { '<leader>S', group = '[S]plit', mode = { 'n' } },
         { '<leader>l', group = '[L]anguage', mode = { 'n' } },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
