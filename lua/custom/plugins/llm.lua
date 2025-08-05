@@ -5,7 +5,7 @@ return {
   config = function()
     local tools = require 'llm.tools'
     require('llm').setup {
-      url = 'http://localhost:1234/v1/chat/completions',
+      url = 'https://evilchatapi.evilbas.com/v1/chat/completions',
       model = 'codestral-22',
       api_type = 'openai',
       app_handler = {

@@ -13,7 +13,7 @@ return {
     },
     on_attach = function(client, bufnr) end,
     capabilities = require('cmp_nvim_lsp').default_capabilities(),
-    root_dir = require('lspconfig').util.root_pattern 'angular.json',
+    root_dir = require('lspconfig').util.root_pattern('angular.json', '.git'),
   },
   require('tailwindcss-colorizer-cmp').setup {
     color_square_width = 2,

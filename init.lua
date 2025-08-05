@@ -918,7 +918,6 @@ require('lazy').setup({
         'svelte',
         'tsx',
         'scss',
-        'html',
         'css',
         'yaml',
         'json',
